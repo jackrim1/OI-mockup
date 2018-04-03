@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  client_first_name: MyString
+  cleint_last_name: MyString
+  amount: 1
+  advisor_name: MyString
+  client: MyString
+
+two:
+  user: two
+  client_first_name: MyString
+  cleint_last_name: MyString
+  amount: 1
+  advisor_name: MyString
+  client: MyString

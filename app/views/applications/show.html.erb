@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @application.user %>
+</p>
+
+<p>
+  <strong>Client first name:</strong>
+  <%= @application.client_first_name %>
+</p>
+
+<p>
+  <strong>Cleint last name:</strong>
+  <%= @application.cleint_last_name %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @application.amount %>
+</p>
+
+<p>
+  <strong>Advisor name:</strong>
+  <%= @application.advisor_name %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @application.client %>
+</p>
+
+<%= link_to 'Edit', edit_application_path(@application) %> |
+<%= link_to 'Back', applications_path %>
