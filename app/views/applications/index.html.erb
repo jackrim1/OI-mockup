@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>User</th>
-<<<<<<< HEAD
+
       <th>Client name</th>
       <th>Client email</th>
       <th>Inv amount</th>
@@ -19,13 +19,6 @@
       <th>Complete</th>
       <th>Submitted date</th>
       <th>Completed date</th>
-=======
-      <th>Client first name</th>
-      <th>Cleint last name</th>
-      <th>Amount</th>
-      <th>Advisor name</th>
-      <th>Client</th>
->>>>>>> cd9751b1b360d254b4170bbb623155ab93f1436f
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -34,7 +27,7 @@
     <% @applications.each do |application| %>
       <tr>
         <td><%= application.user %></td>
-<<<<<<< HEAD
+
         <td><%= application.client_name %></td>
         <td><%= application.client_email %></td>
         <td><%= application.inv_amount %></td>
@@ -47,13 +40,6 @@
         <td><%= application.complete %></td>
         <td><%= application.submitted_date %></td>
         <td><%= application.completed_date %></td>
-=======
-        <td><%= application.client_first_name %></td>
-        <td><%= application.cleint_last_name %></td>
-        <td><%= application.amount %></td>
-        <td><%= application.advisor_name %></td>
-        <td><%= application.client %></td>
->>>>>>> cd9751b1b360d254b4170bbb623155ab93f1436f
         <td><%= link_to 'Show', application %></td>
         <td><%= link_to 'Edit', edit_application_path(application) %></td>
         <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>

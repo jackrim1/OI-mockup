@@ -1,5 +1,6 @@
 class ApplicationsController < ApplicationController
-  before_action :set_application, only: [:show, :edit, :update, :destroy]
+  before_action :set_application, except: [:new, :create, :index]
+
 
   # GET /applications
   # GET /applications.json
@@ -14,6 +15,7 @@ class ApplicationsController < ApplicationController
 
   # GET /applications/new
   def new
+    # #@application = current_user.applications.build
     @application = Application.new
   end
 
@@ -25,7 +27,7 @@ class ApplicationsController < ApplicationController
   # POST /applications.json
   def create
     @application = Application.new(application_params)
-
+    @application.user_id = current_user.id if current_user
     respond_to do |format|
       if @application.save
         format.html { redirect_to @application, notice: 'Application was successfully created.' }
