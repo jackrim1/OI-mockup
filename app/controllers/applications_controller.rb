@@ -69,10 +69,6 @@ class ApplicationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def application_params
-<<<<<<< HEAD
       params.require(:application).permit(:user_id, :client_name, :client_email, :inv_amount, :submitted, :checked, :started_date, :advisor_name, :stage, :client_is_customer, :complete, :submitted_date, :completed_date)
-=======
-      params.require(:application).permit(:user_id, :client_first_name, :cleint_last_name, :amount, :advisor_name, :client)
->>>>>>> cd9751b1b360d254b4170bbb623155ab93f1436f
     end
 end
