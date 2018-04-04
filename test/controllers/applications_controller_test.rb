@@ -18,6 +18,7 @@ class ApplicationsControllerTest < ActionDispatch::IntegrationTest
   test "should create application" do
     assert_difference('Application.count') do
       post applications_url, params: { application: { advisor_name: @application.advisor_name, checked: @application.checked, client_email: @application.client_email, client_is_customer: @application.client_is_customer, client_name: @application.client_name, complete: @application.complete, completed_date: @application.completed_date, inv_amount: @application.inv_amount, stage: @application.stage, started_date: @application.started_date, submitted: @application.submitted, submitted_date: @application.submitted_date, user_id: @application.user_id } }
+
     end
 
     assert_redirected_to application_url(Application.last)
@@ -34,6 +35,7 @@ class ApplicationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update application" do
+
     patch application_url(@application), params: { application: { advisor_name: @application.advisor_name, checked: @application.checked, client_email: @application.client_email, client_is_customer: @application.client_is_customer, client_name: @application.client_name, complete: @application.complete, completed_date: @application.completed_date, inv_amount: @application.inv_amount, stage: @application.stage, started_date: @application.started_date, submitted: @application.submitted, submitted_date: @application.submitted_date, user_id: @application.user_id } }
     assert_redirected_to application_url(@application)
   end
