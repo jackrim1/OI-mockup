@@ -202,7 +202,7 @@ ul {
 .main-footer {
   grid-area: footer;
   height: 45px;
-  background-color: #E5ECF1;
+  /*background-color: #E5ECF1; */
   padding-left: 30px;
   color: #68a4cc;
 }
@@ -259,8 +259,8 @@ ul {
 
 .main-head {
   grid-area: header;
-  background: #2E94D8;
-  height: 55px;
+  /*background: #2E94D8;*/
+  height: 65px;
   padding: 0px;
   position: relative;
 }
