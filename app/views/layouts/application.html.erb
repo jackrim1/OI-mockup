@@ -9,16 +9,18 @@
   </head>
 
   <body>
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
     <div class="wrapper">
+<%= yield %>
       <%= render 'shared/navbar' %>
 
 
 
       <%= render 'shared/footer' %>
-    <%= yield %>
+
   </div>
 
 
