@@ -1,0 +1,82 @@
+<%= form_with(model: application, local: true) do |form| %>
+  <% if application.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(application.errors.count, "error") %> prohibited this application from being saved:</h2>
+
+      <ul>
+      <% application.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :application_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :client_name %>
+    <%= form.text_field :client_name, id: :application_client_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :client_email %>
+    <%= form.text_field :client_email, id: :application_client_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inv_amount %>
+    <%= form.number_field :inv_amount, id: :application_inv_amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :submitted %>
+    <%= form.check_box :submitted, id: :application_submitted %>
+  </div>
+
+  <div class="field">
+    <%= form.label :checked %>
+    <%= form.check_box :checked, id: :application_checked %>
+  </div>
+
+  <div class="field">
+    <%= form.label :started_date %>
+    <%= form.date_select :started_date, id: :application_started_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advisor_name %>
+    <%= form.text_field :advisor_name, id: :application_advisor_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stage %>
+    <%= form.text_field :stage, id: :application_stage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :client_is_customer %>
+    <%= form.check_box :client_is_customer, id: :application_client_is_customer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :complete %>
+    <%= form.check_box :complete, id: :application_complete %>
+  </div>
+
+  <div class="field">
+    <%= form.label :submitted_date %>
+    <%= form.date_select :submitted_date, id: :application_submitted_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :completed_date %>
+    <%= form.date_select :completed_date, id: :application_completed_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @application.user %>
+</p>
+
+<p>
+  <strong>Client name:</strong>
+  <%= @application.client_name %>
+</p>
+
+<p>
+  <strong>Client email:</strong>
+  <%= @application.client_email %>
+</p>
+
+<p>
+  <strong>Inv amount:</strong>
+  <%= @application.inv_amount %>
+</p>
+
+<p>
+  <strong>Submitted:</strong>
+  <%= @application.submitted %>
+</p>
+
+<p>
+  <strong>Checked:</strong>
+  <%= @application.checked %>
+</p>
+
+<p>
+  <strong>Started date:</strong>
+  <%= @application.started_date %>
+</p>
+
+<p>
+  <strong>Advisor name:</strong>
+  <%= @application.advisor_name %>
+</p>
+
+<p>
+  <strong>Stage:</strong>
+  <%= @application.stage %>
+</p>
+
+<p>
+  <strong>Client is customer:</strong>
+  <%= @application.client_is_customer %>
+</p>
+
+<p>
+  <strong>Complete:</strong>
+  <%= @application.complete %>
+</p>
+
+<p>
+  <strong>Submitted date:</strong>
+  <%= @application.submitted_date %>
+</p>
+
+<p>
+  <strong>Completed date:</strong>
+  <%= @application.completed_date %>
+</p>
+
+<%= link_to 'Edit', edit_application_path(@application) %> |
+<%= link_to 'Back', applications_path %>
