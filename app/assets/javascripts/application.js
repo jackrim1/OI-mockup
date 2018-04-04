@@ -18,6 +18,9 @@
 
 $(document).on('turbolinks:load', function(){
   $("table[role='datatable']").each(function(){
-    $(this).DataTable({});
+    $(this).DataTable({
+      "aaSorting" : [[2, "Started date"]]
+
+    });
   });
 })

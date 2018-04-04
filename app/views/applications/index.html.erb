@@ -36,8 +36,19 @@
         <td><%= application.stage %></td>
         <!--<td><%= application.client_is_customer %></td> -->
         <!--<td><%= application.complete %></td> -->
-        <td><%= application.submitted_date %></td>
-        <td><%= application.completed_date %></td>
+        <td>
+          <%= if !application.submitted
+         "N/A"
+         else
+         application.submitted_date
+         end %>
+
+         </td>
+        <td><%= if !application.complete
+         "N/A"
+         else
+         application.completed_date
+         end %>
         <!--<td><%= link_to 'Show', application %></td>
         <td><%= link_to 'Edit', edit_application_path(application) %></td>
         <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
