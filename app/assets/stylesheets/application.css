@@ -338,12 +338,20 @@ ul {
   display: block;
 }
 
+/*  TABLE TABLE TABLE TABLE TABLE */
 
+.red {
+  background-color: #ffe6e6 !important;
+}
 
-
-
-
-
+.emailButton {
+  box-shadow: rgb(255, 0, 106) 0px 0px 0px 0px;
+  background: linear-gradient(rgb(255, 0, 106) 5%, rgb(255, 0, 106) 100%) rgb(255, 0, 106);
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 7px 25px;
+}
 
 
 

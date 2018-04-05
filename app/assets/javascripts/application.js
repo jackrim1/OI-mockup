@@ -16,11 +16,14 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).on('turbolinks:load', function(){
-  $("table[role='datatable']").each(function(){
-    $(this).DataTable({
-      "aaSorting" : [[2, "Started date"]]
-
-    });
+$(document).ready(function(){
+$("table[role='datatable']").DataTable({
+    "createdRow": function( row, data, dataIndex ) {
+             if ( data[3] != "Investment Complete" ) {
+         $(row).addClass('red');
+       }
+    }
   });
-})
+});
+
+
