@@ -57,3 +57,4 @@ gem 'devise'
 gem 'rails-assets-jquery', source: "https://rails-assets.org"
 gem 'rails-assets-datatables', source: "https://rails-assets.org"
 gem 'jquery-ui-rails'
+gem 'flexbox-rails'
