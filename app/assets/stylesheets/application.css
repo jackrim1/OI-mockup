@@ -132,7 +132,7 @@ p {
   .wrapper > * {
     background-color: white;
     border-radius: 1px;
-    padding: 14px;
+    padding: 11px;
     width: 100%;
   }
 
@@ -149,7 +149,7 @@ p {
 .image-box {
   vertical-align: top;
   list-style: none;
-  padding: 5px;
+  padding: 4px;
   max-width: 100px;
   display: inline-block;
 }
@@ -213,7 +213,7 @@ ul {
 
 .wrapper {
   display: grid;
-  grid-gap: 12px;
+  grid-gap: 10px;
   grid-template-areas:
   "header"
   "nav"
