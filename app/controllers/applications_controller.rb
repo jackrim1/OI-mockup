@@ -63,6 +63,36 @@ class ApplicationsController < ApplicationController
     end
   end
 
+
+  def investor
+  end
+
+  def investment
+  end
+
+  def withdrawals
+  end
+
+  def adviser
+  end
+
+  def adviser_payment
+  end
+
+  def octopus_charges
+  end
+
+  def residency
+  end
+
+  def declarations
+  end
+
+  def transfer
+  end
+
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_application

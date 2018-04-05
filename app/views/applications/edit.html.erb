@@ -1,6 +1,14 @@
-<h1>Editing Application</h1>
+<div class="main-nav">
+  <%= render 'app_menu' %>
+</div>
+
+
+<div class="content center">
+<h3>Editing Application</h3>
 
 <%= render 'form', application: @application %>
 
 <%= link_to 'Show', @application %> |
 <%= link_to 'Back', applications_path %>
+
+</div>
