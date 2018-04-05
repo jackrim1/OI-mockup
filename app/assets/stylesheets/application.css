@@ -370,8 +370,8 @@ ul {
 }
 .progress-bar .dot {
   background-color: #aaa;
-  max-width: 14px;
-  height: 14px;
+  max-width: 18px;
+  height: 18px;
   flex-grow: 1;
   border-radius: 50%;
   border: 3px solid #fff;
@@ -379,7 +379,7 @@ ul {
 .progress-bar .bar {
   background-color: #ddd;
   flex-grow: 1;
-  height: 2px;
+  height: 2.75px;
 }
 .progress-bar .blue {
   background-color: dodgerblue;
