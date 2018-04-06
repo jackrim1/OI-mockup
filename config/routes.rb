@@ -10,6 +10,8 @@ Rails.application.routes.draw do
       get 'residency'
       get 'declarations'
       get 'transfer'
+      get 'homepage'
+      get 'profile'
     end
   end
 

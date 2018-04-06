@@ -27,7 +27,7 @@
   <tbody>
     <% @applications.each do |application| %>
       <tr>
-        <td><%= link_to application.client_name, edit_application_path(application) %></td>
+        <td><%= link_to application.client_name, profile_application_path(application) %></td>
         <!--<td><%= application.client_email %></td> -->
         <td><%= application.inv_amount %></td>
         <!--<td><%= application.submitted %></td> -->

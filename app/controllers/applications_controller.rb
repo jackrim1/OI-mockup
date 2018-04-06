@@ -91,6 +91,11 @@ class ApplicationsController < ApplicationController
   def transfer
   end
 
+  def homepage
+  end
+
+  def profile
+  end
 
 
   private
