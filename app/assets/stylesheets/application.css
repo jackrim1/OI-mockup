@@ -29,6 +29,7 @@
   --blue: #2E94D8;
 }
 
+
 html,
 body {
   height: 100%;
@@ -402,6 +403,10 @@ ul {
   height: 0.01px;
 }
 
+.progress-bar .blue {
+  background-color: dodgerblue;
+}
+
 /* Give some paddings */
 .progress-bar {
   padding: 45px 50px 0 50px;
@@ -426,7 +431,7 @@ p {
 /* Put an arrow on the top of P tag */
 .arrow_box {
   position: relative;
-  background: dodgerblue;
+  background: #FF4F60;
   border-radius: 3px;
 }
 
@@ -440,8 +445,20 @@ p {
   position: absolute;
   pointer-events: none;
   border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: dodgerblue;
+  border-bottom-color: #FF4F60;
   border-width: 5px;
   margin-left: -5px;
 }
+
+.pink {
+  color: #FF4F60;
+  font-size: 18px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+
 
