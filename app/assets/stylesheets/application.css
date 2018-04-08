@@ -472,4 +472,7 @@ p {
   justify-content: center;
 }
 
+.container {
+  max-width: 400px;
+}
 
