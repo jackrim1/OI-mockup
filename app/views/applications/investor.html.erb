@@ -4,4 +4,30 @@
 
 <div class="content">
 <h5>Investor Details</h5>
+
+<div class="container center">
+<%= form_for @application do |form| %>
+
+
+  <div class="field">
+    <%= form.label :client_name, :style => "float:left;" %>
+    <%= form.text_field :client_name, id: :application_client_name, :style => "float:right; width: 200px" %>
+  </div>
+<br>
+<br>
+  <div class="field">
+    <%= form.label :client_email, :style => "float:left;" %>
+    <%= form.text_field :client_email, id: :application_client_email, :style => "float:right; width: 200px" %>
+  </div>
+
+
+<br>
+<br>
+
+  <div class="actions center">
+    <%= form.submit %>
+  </div>
+<% end %>
+</div>
+
 </div>
