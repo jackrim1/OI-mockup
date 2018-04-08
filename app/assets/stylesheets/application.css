@@ -455,10 +455,21 @@ p {
   font-size: 18px;
 }
 
+.invisible {
+  color: white;
+}
+
 .flex-container {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
 }
 
+.flex-box {
+  display: flex;
+  justify-content: center;
+}
 
 
