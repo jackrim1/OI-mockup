@@ -1,1 +1,22 @@
-Hello world!
+
+
+<div class="content">
+
+<h2>OI-Mockup Log in</h2>
+
+<%= form_for(:user, :url => session_path(:user)) do |f| %>
+  <%= f.text_field :email %>
+  <br>
+  <%= f.password_field :password %>
+
+  <br>
+  <br>
+  <%= f.submit 'Sign in' %>
+
+  <br>
+  <br>
+
+  <%= link_to 'Home Page', applications_path %>
+
+<% end %>
+</div>
