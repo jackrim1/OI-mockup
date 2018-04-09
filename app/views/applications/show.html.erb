@@ -6,19 +6,24 @@
 <div class="content">
   <h3 style="font-weight: bold;">Customer Profile</h3>
 
-    <div class="flex-container">
+    <div class="flex-container", style="float:left;">
+
+
 
       <div style="color: #aaa;">Client Name: </div>
       <div class="invisible">------</div>
       <div class="pink"><%= @application.client_name %></div>
     </div>
-    <div class="flex-container">
+    <div class="flex-container", style="float:left;">
       <div style="color: #aaa;">Investment Amount: £ </div>
       <div class="invisible">------</div>
       <div class="pink"><%= @application.inv_amount %></div>
     </div>
 
-
+<p>
+  <br>
+  <br>
+  <p>
 
 <h3 style="font-weight: bold;">Application Progress</h3>
  <%= render 'progress' %>

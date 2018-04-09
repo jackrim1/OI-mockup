@@ -427,7 +427,7 @@ p {
   line-height: 40px;
   margin: 20px auto;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Questrial', sans-serif;
   color: #fff;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -437,7 +437,7 @@ p {
 /* Put an arrow on the top of P tag */
 .arrow_box {
   position: relative;
-  background: #FF4F60;
+  background: #FF005D;
   border-radius: 3px;
 }
 
@@ -451,14 +451,15 @@ p {
   position: absolute;
   pointer-events: none;
   border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #FF4F60;
+  border-bottom-color: #FF005D;
   border-width: 5px;
   margin-left: -5px;
 }
 
 .pink {
-  color: #FF4F60;
+  color: #FF005D;
   font-size: 18px;
+  font-family: 'Questrial', sans-serif;
 }
 
 .invisible {
