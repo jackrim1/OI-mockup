@@ -145,6 +145,7 @@ p {
 
 .content {
   grid-area: content;
+  padding-left: 70px;
 }
 
 .image-box {
@@ -205,11 +206,14 @@ ul {
 
 .main-footer {
   grid-area: footer;
-  height: 45px;
-  /*background-color: #E5ECF1; */
+  height: 50px;
+  background-color: #20003D;
   padding-left: 30px;
   color: #68a4cc;
   width: span;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .wrapper {
@@ -479,4 +483,9 @@ p {
 
 .myform {
   size: 300px;
+}
+
+.title {
+  padding: 25px;
+  right: 50px;
 }
